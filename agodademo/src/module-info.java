@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+/*module agodademo {
+	requires agodademo
+} */
