@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+/*module alertdemo {
+	requires alertdemo
+}*/
