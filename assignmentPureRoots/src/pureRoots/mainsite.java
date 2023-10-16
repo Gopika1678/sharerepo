@@ -38,19 +38,19 @@ public class mainsite {
 		start.orderstart();
 		start.recreation();
 		
-		/*login loginpg=new login(driver);
+		login loginpg=new login(driver);
 		loginpg.purelogin();
-		loginpg.loginmonth(); */
-		
-		register reg=new register(driver);
+		loginpg.loginmonth();
+		loginpg.pdtselect();
+		/*register reg=new register(driver);
 		reg.registerbtn();
 		reg.recreationbtn();
 		reg.nextbtn();
 		reg.btnupload();
-		reg.details(); 
-	//	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
-		selectproduct pdt=new selectproduct(driver);
-		pdt.product();
+		reg.details();  */
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
+	//	selectproduct pdt=new selectproduct(driver);
+		//pdt.product();
 				
 		checkoutpage page=new checkoutpage(driver);
 		page.checkout(); 
