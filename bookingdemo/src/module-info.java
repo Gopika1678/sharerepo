@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+/*module bookingdemo {
+	requires bookingdemo
+}*/
