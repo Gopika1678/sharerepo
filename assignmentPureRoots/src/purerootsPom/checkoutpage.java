@@ -18,6 +18,7 @@ public class checkoutpage {
 	By model=By.id("order_car_model");
 	By complete=By.xpath("order_car_model");
 	public boolean checkout() {
+		System.out.println("hello");
 		driver.findElement(checkout).click();
 		driver.findElement(order).click();
 		driver.findElement(picudate).click();
