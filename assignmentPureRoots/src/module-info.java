@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+/*module assignmentPureRoots {
+	requires assignmentPureRoots
+}*/
