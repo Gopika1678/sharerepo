@@ -6,6 +6,7 @@
             <class name="testcases.purerootslogin"/>
             <class name="testcases.registration"/>
 	      <class name="testcases.searchpdt"/>
+	      <class name="testcases.checkout"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
