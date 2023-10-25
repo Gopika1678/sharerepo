@@ -13,6 +13,11 @@
           <include name="register"/>
         </methods>
       </class> <!-- testcases.registration -->
+      <class name="testcases.purerootslogin">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- testcases.purerootslogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

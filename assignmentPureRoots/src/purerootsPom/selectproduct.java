@@ -12,7 +12,7 @@ public class selectproduct {
 	By modal=By.xpath("//div[@id='loginModal']//div[@class='modal-body text-center']");
 	By search=By.id("search_product");
 	By searcbtn=By.xpath("//i[@class='fas fa-search']");
-	By variant=By.xpath("//div[@id='search_products']//div[1]//div[2]//ul[1]//li[1]//a[1]//div[1]//span[1]//i[1]");
+	By variant=By.id("variant_name_4014");
 	By cartopen=By.xpath("//a[@class='cartBtn_div openbtn']");
 	By checkout=By.xpath("//a[normalize-space()='Proceed to Checkout']");
 ;

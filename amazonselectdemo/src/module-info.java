@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+/*module amazonselectdemo {
+	requires amazonselectdemo
+}*/

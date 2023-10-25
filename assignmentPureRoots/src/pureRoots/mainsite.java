@@ -49,8 +49,8 @@ public class mainsite {
 		reg.btnupload();
 		reg.details();  */
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(120));
-	//	selectproduct pdt=new selectproduct(driver);
-		//pdt.product();
+		selectproduct pdt=new selectproduct(driver);
+		pdt.product();
 				
 		checkoutpage page=new checkoutpage(driver);
 		page.checkout(); 
