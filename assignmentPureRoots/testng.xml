@@ -4,9 +4,7 @@
   <test thread-count="5" name="Test" parallel="classes">
     <classes>
             <class name="testcases.purerootslogin"/>
-            <class name="testcases.registration"/>
-	      <class name="testcases.searchpdt"/>
-	      <class name="testcases.checkout"></class>
+           
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

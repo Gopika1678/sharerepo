@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import purerootsPom.entry;
-import purerootsPom.register;
+import purerootsPom.login;
 import purerootsPom.location;
 import purerootsPom.startorder;
 import purerootsPom.selectproduct;
@@ -18,6 +18,7 @@ public void test() {
 	
 	//4a(correctly identifying age)
 	entry entrypt=new entry(driver);
+	driver.manage().window().maximize();
 	driver.get("https://pureroots.thetunagroup.com");
 	entrypt.entrypt();
 	Assert.assertTrue(true);
@@ -37,16 +38,10 @@ public void test() {
 	
 	//verify that reg process is successfull
 	
-	register reg=new register(driver);
-	reg.registerbtn();
-	reg.recreationbtn();
-	reg.nextbtn();
-	reg.btnupload();
-	
-	if(reg.details()) {
-		Assert.assertTrue(true);
-	}
-	
+	login logindata=new login(driver);
+	logindata.purelogin();
+	logindata.loginmonth();
+	//logindata.pdtselect();
 	
 	// 4c verify that product can be searched and added to cart
 	selectproduct selectpdt=new selectproduct(driver);

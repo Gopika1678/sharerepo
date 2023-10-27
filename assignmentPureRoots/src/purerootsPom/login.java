@@ -34,6 +34,7 @@ By checkout=By.xpath("//a[normalize-space()='Proceed to Checkout']");
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(modalid));
 
 		driver.findElement(loginbtn).click();
+		loginmonth();
 	}
 	public void loginmonth() {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(30));
@@ -43,6 +44,7 @@ By checkout=By.xpath("//a[normalize-space()='Proceed to Checkout']");
 		driver.findElement(loginyr).sendKeys("1980");
 		driver.findElement(loginphone).sendKeys("5648339038");
 		driver.findElement(loginBtn).click();
+		pdtselect();
 	}
 	public void pdtselect() {
 		System.out.println("welcome");

@@ -3,16 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="testcases.searchpdt">
-        <methods>
-          <include name="search"/>
-        </methods>
-      </class> <!-- testcases.searchpdt -->
-      <class name="testcases.registration">
-        <methods>
-          <include name="register"/>
-        </methods>
-      </class> <!-- testcases.registration -->
       <class name="testcases.purerootslogin">
         <methods>
           <include name="test"/>

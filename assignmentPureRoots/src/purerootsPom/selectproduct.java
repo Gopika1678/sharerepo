@@ -10,7 +10,7 @@ public class selectproduct {
 		this.driver=driver;
 	}
 	By modal=By.xpath("//div[@id='loginModal']//div[@class='modal-body text-center']");
-	By search=By.id("search_product");
+	By search=By.xpath("//input[@id='search_product']");
 	By searcbtn=By.xpath("//i[@class='fas fa-search']");
 	By variant=By.id("variant_name_4014");
 	By cartopen=By.xpath("//a[@class='cartBtn_div openbtn']");
@@ -20,7 +20,7 @@ public class selectproduct {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(120));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(modal));
 	//	wait.until(ExpectedConditions.elementToBeClickable(search));
-		driver.findElement(search).sendKeys("Vape Cart");
+		driver.findElement(search).sendKeys("Flower");
 		driver.findElement(searcbtn).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(variant));
 		driver.findElement(variant).click();
