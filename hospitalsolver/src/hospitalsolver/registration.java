@@ -65,12 +65,12 @@ public class registration {
 		pcontact.click();
 		Select action=new Select(pcontact);
 		action.selectByValue("+91");
-		driver.findElement(contactno).sendKeys("8734256890");
+		driver.findElement(contactno).sendKeys("8456734568");
 		driver.findElement(nationality).click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='backdrop']")));
 
 		driver.findElement(selectnation).click();
-		driver.findElement(idcardno).sendKeys("6578");
+		driver.findElement(idcardno).sendKeys("4567");
 		WebElement cardtypes=driver.findElement(cardtype);
 		cardtypes.click();
 		Select card=new Select(cardtypes);
