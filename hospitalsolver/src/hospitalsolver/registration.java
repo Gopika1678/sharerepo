@@ -41,6 +41,7 @@ public class registration {
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(120));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='backdrop']")));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(menu));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='backdrop']")));
 		driver.findElement(menu).click();
 		driver.findElement(frontoffice).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(patient));
@@ -64,18 +65,25 @@ public class registration {
 		pcontact.click();
 		Select action=new Select(pcontact);
 		action.selectByValue("+91");
-		driver.findElement(contactno).sendKeys("9845674678");	
+		driver.findElement(contactno).sendKeys("8734256890");
 		driver.findElement(nationality).click();
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='backdrop']")));
+
 		driver.findElement(selectnation).click();
-		driver.findElement(idcardno).sendKeys("98");
+		driver.findElement(idcardno).sendKeys("6578");
 		WebElement cardtypes=driver.findElement(cardtype);
 		cardtypes.click();
 		Select card=new Select(cardtypes);
 		card.selectByVisibleText("Resident Card");
+		
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='backdrop']")));
+
 		driver.findElement(specialty).click();
 	    driver.findElement(doctor).click();
 		driver.findElement(namedoc).click();
 	    driver.findElement(doctorname).click();
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='backdrop']")));
+
 		WebElement save=driver.findElement(savebtn);
 		save.click();	
 		TakesScreenshot scrsht=(TakesScreenshot)driver;

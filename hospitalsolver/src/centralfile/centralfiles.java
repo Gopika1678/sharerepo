@@ -17,6 +17,7 @@ public class centralfiles {
 		driver.get("http://qdtestserver01.eastus2.cloudapp.azure.com:509/#/login/gamc");
 		hospitalloginpg login=new hospitalloginpg(driver);
 		login.loginpage();
+	//	login.invalid();
 		registration reg=new registration(driver);
 		reg.register();
 		reg.registerpatient();
@@ -24,5 +25,6 @@ public class centralfiles {
 		consult.consultant();
 		
 	}
+	
 
 }
