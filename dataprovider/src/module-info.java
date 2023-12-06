@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+/*module dataprovider {
+	requires dataprovider
+}*/

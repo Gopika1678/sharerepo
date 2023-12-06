@@ -8,8 +8,8 @@ public class postapi {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		postpetstore postpet=new postpetstore();
-		postpet.setId("6");
-		postpet.setPetid("6789");
+		postpet.setId("9");
+		postpet.setPetid("4567");
 		postpet.setQuantity("9");
 		postpet.setShipdate("06-07-2023");
 		postpet.setStatus("passed");
