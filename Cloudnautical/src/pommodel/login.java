@@ -31,8 +31,8 @@ public class login {
 		HSSFSheet sheet=wb.getSheet("Login");
 		HSSFRow row1=sheet.getRow(1);
 		HSSFCell cell1=row1.getCell(0);
-		//String cell2=cell1.getStringCellValue();
-		System.out.println(cell2);
+		String cell2=cell1.getStringCellValue();
+		//System.out.println(cell2);
 		driver.findElement(password).sendKeys(cell2);
 		driver.findElement(loginbtn).click();
 		
